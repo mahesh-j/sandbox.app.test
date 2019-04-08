@@ -1,0 +1,3 @@
+service {
+	"sandbox.app.test.db::test_cv" as "Student" key ( "id" );
+}

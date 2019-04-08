@@ -1,0 +1,10 @@
+{
+	"welcomeFile": "index.html",
+	"authenticationMethod": "route",
+	"routes": [{
+		"source": "/test.xsodata/",
+		"destination": "sandbox.app.test.odata.be",
+		"csrfProtection": true,
+        "authenticationType": "xsuaa"
+	}]
+}

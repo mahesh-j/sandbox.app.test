@@ -1,0 +1,22 @@
+{
+    "uaa": {
+      "url"             : "https://ectxdhnas08.mycenterpointenergy.com:31032/uaa-security",
+      "clientid"        : "sb-na-1ba691a9-a1c3-4a42-b550-7bf80ae9b82e!i2",
+      "clientsecret"    : "OcMkpPjfqML5YuRALx4Pc2Uz9iaslBjzIztiDrcNYvGGq/BkVqfg7ayWmWDfEj/fwCsB8OZ100Ij\nBR0gGBr6Rw==",
+      "xsappname"       : "na-1ba691a9-a1c3-4a42-b550-7bf80ae9b82e!i2",
+      "identityzone"    : "uaa",
+      "tags"            : ["xsuaa"],
+      "verificationkey" : "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnmpHqbOwpa6kqftt+vwnnS+t51sFN/lJZ0YaS3860UbHs2Zawo6ffhRukJGe8kJqVwMPdj/eUkAS3bd2UOcnyoxi+zexw1EFXX3V79gnmMsYJpOjNu4cr0hxxpvst10SH08gqFmBZfVmED0ov25wsMF7bDz7PK1ufLUiThDH4PxiqNjjwe/ENtkYdl0ASvWKt/mW9NIYAaJ+SkQvfmVrANSeC0XnjWg2OtoMnMTdDay+P3hGwVXpw+L0W2Mgx0UsS80GltiXPnCbNSbMMhu0VbEQ19xL+eLSmpO7IZI0dBgiJxiDULPGIiPhXZCnhsXgaUZZBQT0y8gttIA6X2jGqwIDAQAB-----END PUBLIC KEY-----"
+    },
+    "hana" : {
+        "host" : "ectxdhnas0",
+        "port" : 31015,
+        "user" : "TEST_1_4ZIPJ8EE81J5KCKWXJ9PYP6QB_RT",
+        "password" : "Wl8sgBErC9lHy1FnbQDXmncWpE1alB.i6VgxbYiMlqzdPLUcFN1BJphHVaXUdmV8cgG_Pc4ZrqYiNgl2nRph5yOluewe_qygsXHsDhWutmrRkJIOPZg1uyUOvSSw2YI3",
+        "schema" : "TEST_1"
+    },
+    "test": {
+      "userid"          : "00932540",
+      "usersecret"      : "Houston1234"
+    }
+  }

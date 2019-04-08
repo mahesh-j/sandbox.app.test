@@ -1,0 +1,10 @@
+{
+    "PORT": 3001,
+    "destinations": [
+      {
+        "name": "sandbox.app.test.odata.be",
+        "url": "http://localhost:3000",
+        "forwardAuthToken": true
+      }
+    ]
+  }

@@ -1,0 +1,47 @@
+ID: sandbox.app.test
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: sandbox.app.test.db
+   type: hdb
+   path: db
+   requires:
+    - name: sandbox.service.xsuaa
+    - name: sandbox.app.test.hdi.db
+
+ - name: sandbox.app.test.odata
+   type: nodejs
+   path: odata
+   requires:
+     - name: sandbox.service.xsuaa
+     - name: sandbox.app.test.hdi.db
+     - name: sandbox.app.test.db
+   provides:
+    - name: sandbox.app.test.odata.api
+      properties:
+         url: ${default-url}
+
+
+ - name: sandbox.app.test.ui5
+   type: html5
+   path: ui5
+   requires:
+    - name: sandbox.service.xsuaa
+    - name: sandbox.app.test.odata.api
+      group: destinations
+      properties:
+         name: sandbox.app.test.odata.be
+         url: ~{url}
+
+resources:
+ - name: sandbox.app.test.hdi.db
+   parameters:
+      config:
+         schema: test
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+   
+ - name: sandbox.service.xsuaa
+   type: org.cloudfoundry.existing-service

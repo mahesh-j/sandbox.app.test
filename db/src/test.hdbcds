@@ -1,0 +1,13 @@
+namespace sandbox.app.test.db;
+
+context test {
+
+    /*@@layout{"layoutInfo":{"x":171,"y":72.5}}*/
+    entity Student {
+        key id         : Integer;
+            department : String(50);
+            fname      : String(50);
+            lname      : String(50);
+            stream     : String(50);
+    };
+};

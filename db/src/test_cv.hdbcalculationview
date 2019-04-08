@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="sandbox.app.test.db::test_cv" applyPrivilegeType="NONE" dataCategory="DEFAULT" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="DAILY" enforceSqlExecution="false">
+<descriptions defaultDescription="test_cv"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="sandbox.app.test.db::test.Student">
+    <resourceUri>sandbox.app.test.db::test.Student</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="sandbox.app.test.db::test.Student">
+  <attributes>
+    <attribute id="id" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="id"/>
+      <keyMapping columnObjectName="test.Student" columnName="id"/>
+    </attribute>
+    <attribute id="department" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="department"/>
+      <keyMapping columnObjectName="test.Student" columnName="department"/>
+    </attribute>
+    <attribute id="fname" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="fname"/>
+      <keyMapping columnObjectName="test.Student" columnName="fname"/>
+    </attribute>
+    <attribute id="lname" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="lname"/>
+      <keyMapping columnObjectName="test.Student" columnName="lname"/>
+    </attribute>
+    <attribute id="stream" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="stream"/>
+      <keyMapping columnObjectName="test.Student" columnName="stream"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
